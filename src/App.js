@@ -1,6 +1,6 @@
 import './App.scss';
-import NavBar from './components/navBar/NavBar';
-import ItemListContainer from './components/itemListContainer/ItemListContainer';
+import NavBar from './components/NavBar/NavBar';
+import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 
 
 const App = () => {
@@ -10,7 +10,7 @@ const App = () => {
       <NavBar />
     </div>
     <main className='main'>
-      <ItemListContainer saludo={'¡Bienvenidos a mi tienda de tejidos!'} />
+      <ItemListContainer greeting={'¡Bienvenidos a mi tienda!'} />
     </main>
     </>
   );

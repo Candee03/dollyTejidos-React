@@ -1,7 +1,7 @@
 import './NavBar.scss'
 import React from "react";
-import Logo from '../logo/Logo';
-import CartWidget from '../cartWidget/CartWidget';
+import Logo from '../Logo/Logo';
+import CartWidget from '../CartWidget/CartWidget';
 
 
 const NavBar = () => {
