@@ -1,14 +1,15 @@
 import './CartWidget.scss'
 import CartLogo from '../../img/cart.png'
 import React from "react";
+import { Link } from 'react-router-dom';
 
 
 const CartWidget = () => {
     return (
-        <a href="#" className="cart-widget">
+        <Link to={'/'} className="cart-widget">
             <img className='cart-img' src={ CartLogo }></img>
-            <span className="counter">0</span>
-        </a>
+            <span className="counter">1</span>
+        </Link>
     );
 };
 

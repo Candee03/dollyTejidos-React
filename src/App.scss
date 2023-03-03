@@ -14,13 +14,11 @@ $color-bLanco :#F8FCFF;
     margin: 0 9rem;
   }
 }
-.main {
+main {
   margin: 3rem 9rem;
-  height: 12rem;
   background-color: $color-bLanco;
   border: 1px black dashed;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
 }

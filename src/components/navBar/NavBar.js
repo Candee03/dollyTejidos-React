@@ -2,17 +2,19 @@ import './NavBar.scss'
 import React from "react";
 import Logo from '../Logo/Logo';
 import CartWidget from '../CartWidget/CartWidget';
+import { Link } from 'react-router-dom';
 
 
 const NavBar = () => {
-    const nav = ['Home', 'Categorias', 'Sobre Nosotros'];
-    const links = nav.map((link, i) => <li key={i} className="li-navbar"><a className="link-navbar" href='#'>{link}</a></li>)
     return (
         <header className='header'>
-            <Logo />
+            <Link to={'/'}><Logo /></Link>
             <div>
                 <ul className='ul-links'>
-                    { links }
+                    <li className="li-navbar"><Link className="link-navbar" to={'/'}>Home</Link></li>
+                    <li className="li-navbar"><Link className="link-navbar" to={'/category/1'}>Accesorios</Link></li>
+                    <li className="li-navbar"><Link className="link-navbar" to={'/category/2'}>Ropa</Link></li>
+                    <li className="li-navbar"><Link className="link-navbar" to={'/category/3'}>Infantil</Link></li>
                 </ul>
             </div>
             <div>
